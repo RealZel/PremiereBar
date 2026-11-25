@@ -1,0 +1,29 @@
+{
+  "format_version": 1,
+  "version": 1,
+  "fields": {
+    "channel": {
+      "label": "YouTube channel",
+      "description": "Enter an @handle, a channel ID or a YouTube channel URL.",
+      "type": "string",
+      "default": "",
+      "max_length": 180
+    },
+    "api_key": {
+      "label": "YouTube Data API key",
+      "description": "Use your own Google Cloud API key. Leave blank to try the demo.",
+      "type": "string",
+      "default": "",
+      "max_length": 128,
+      "sensitive": true
+    },
+    "view_goal": {
+      "label": "Views to fill the cinema",
+      "description": "The same personal view goal applies to each video.",
+      "type": "integer",
+      "min": 20,
+      "max": 1000000000,
+      "default": 1000
+    }
+  }
+}
